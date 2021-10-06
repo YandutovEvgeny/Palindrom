@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<conio.h>
 using namespace std;
 using std::cout;
@@ -14,32 +14,32 @@ void main()
 {
 	setlocale(LC_ALL, "Russian");
 #ifdef PALINDOM
-unsigned long long int number; // Число вводимое с клавиатуры
-cout << "Введите число: " << endl; cin >> number;
-unsigned long long int buffer = number; //Копия введённого числа
-unsigned long long int mirror_number = 0; //Число записанное наоборот
+unsigned long long int number; // Р§РёСЃР»Рѕ РІРІРѕРґРёРјРѕРµ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
+cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: " << endl; cin >> number;
+unsigned long long int buffer = number; //РљРѕРїРёСЏ РІРІРµРґС‘РЅРЅРѕРіРѕ С‡РёСЃР»Р°
+unsigned long long int mirror_number = 0; //Р§РёСЃР»Рѕ Р·Р°РїРёСЃР°РЅРЅРѕРµ РЅР°РѕР±РѕСЂРѕС‚
 while (buffer)
 {
 	mirror_number *= 10;
-	mirror_number += buffer % 10; //Сохраняем младший разряд исходного числа
+	mirror_number += buffer % 10; //РЎРѕС…СЂР°РЅСЏРµРј РјР»Р°РґС€РёР№ СЂР°Р·СЂСЏРґ РёСЃС…РѕРґРЅРѕРіРѕ С‡РёСЃР»Р°
 	//mirror_number = mirror_number * 10 + buffer % 10;
-	buffer /= 10; //Убираем сохранённый ранее разряд
+	buffer /= 10; //РЈР±РёСЂР°РµРј СЃРѕС…СЂР°РЅС‘РЅРЅС‹Р№ СЂР°РЅРµРµ СЂР°Р·СЂСЏРґ
 
 }
 if (number == mirror_number)
 {
-	cout << "Число является палиндромом" << endl;
+	cout << "Р§РёСЃР»Рѕ СЏРІР»СЏРµС‚СЃСЏ РїР°Р»РёРЅРґСЂРѕРјРѕРј" << endl;
 }
 else
 {
-	cout << "Число НЕ является палиндромом" << endl;
+	cout << "Р§РёСЃР»Рѕ РќР• СЏРІР»СЏРµС‚СЃСЏ РїР°Р»РёРЅРґСЂРѕРјРѕРј" << endl;
 }
 #endif // PALINDOM
 
 #ifdef WHILE
-	int n;  // Количество итераций
-	int i = 0;  //Счётчик цикла
-	cout << "Введите количество итераций: "; cin >> n;
+	int n;  // РљРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№
+	int i = 0;  //РЎС‡С‘С‚С‡РёРє С†РёРєР»Р°
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ РёС‚РµСЂР°С†РёР№: "; cin >> n;
 	/*while (i++ < n)
 	{
 		cout << i << "Hello world!\n";
@@ -50,7 +50,7 @@ else
 		cout << n << "Hello World!" << endl;
 	}*/
 #endif // WHILE
-	/*char key; //Будет хранить код клавиши
+	/*char key; //Р‘СѓРґРµС‚ С…СЂР°РЅРёС‚СЊ РєРѕРґ РєР»Р°РІРёС€Рё
 	do
 	{
 		key = _getch();
@@ -64,10 +64,10 @@ else
 		//cout << (int)key << tab << key << endl;
 		switch (key)
 		{
-		case (119): cout << "Вперёд" << endl; break;
-		case (115): cout << "Назад" << endl; break;
-		case (97): cout << "Влево" << endl; break;
-		case (100): cout << "Вправо" << endl; break;
+		case (119): cout << "Р’РїРµСЂС‘Рґ" << endl; break;
+		case (115): cout << "РќР°Р·Р°Рґ" << endl; break;
+		case (97): cout << "Р’Р»РµРІРѕ" << endl; break;
+		case (100): cout << "Р’РїСЂР°РІРѕ" << endl; break;
 		
 		}
 	}while (key != ESCAPE);*/
